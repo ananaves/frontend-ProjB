@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/editar-livros.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>livros</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="cabecalho">
+
+            <div class="logo">
+                <img src="/img/logo-transp2.png">
+            </div>
+
+            <nav class="nav-item">
+
+                <div class="item "><a href="pagina-alunos.html">ALUNOS</a></div>
+
+                <div class="item selecionado"><a href="pagina-livros.html">LIVROS</a></div>
+
+                <div class="item"><a href="pagina-emprestimo.html">EMPRESTIMOS</a></div>
+
+                <div class="item "><a href="pagina-menu.html">MENU</a></div>
+
+            </nav>
+
+        </nav>
+
+    </header>
+
+    <h1>EDITAR LIVRO</h1>
+
+    <div class="container">
+
+        <form class="form-container">
+
+            <div class="esquerda">
+                <label for="titulo">TÍTULO</label>
+                <input type="text" id="titulo" placeholder="INSIRA O TÍTULO">
+
+                <label for="autor">AUTOR</label>
+                <input type="text" id="autor" placeholder="INSIRA O AUTOR">
+
+                <label for="editora">EDITORA</label>
+                <input type="text" id="editora" placeholder="INSIRA A EDITORA">
+
+                <label for="ano-publicacao">ANO DE PUBLICAÇÃO</label>
+                <input type="text" id="ano-publicacao" placeholder="INSIRA O ANO DE PUBLICAÇÃO">
+
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" placeholder="INSIRA O ISBN">
+            </div>
+
+            <div class="direita">
+                <label for="quantidade-total">QUANTIDADE TOTAL</label>
+                <input type="text" id="quantidade-total" placeholder="INSIRA A QUATIDADE">
+
+                <label for="quantidade-disponivel">QUANTIDADE DISPONÍVEL</label>
+                <input type="text" id="quantidade-disponivel" placeholder="INSIRA A QUANTIDADE">
+
+                <label for="valor-aquisicao">VALOR DA AQUISIÇÃO</label>
+                <input type="text" id="valor-aquisicao" placeholder="INSIRA O VALOR">
+
+                <label for="status-emprestimo">STATUS DO EMPRÉSTIMO</label>
+                <input type="text" id="status-emprestimo" placeholder="INSIRA O STATUS">
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="botao">
+        <button type="submit">SALVAR</button>
+    </div>
+</body>

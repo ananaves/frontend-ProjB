@@ -1,0 +1,75 @@
+
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #2E1451;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9EFD4;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px ;
+    padding-bottom:10px ;
+    border-radius:20px ;
+    width: 500px ;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2E1451;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+input {
+    background-color: #d9d9d9;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.esquerda, .direita {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.direita{
+    padding-left: 50px;
+}
+button {
+    background-color: white;
+    color: #2E1451;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}

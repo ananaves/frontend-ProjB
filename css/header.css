@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6289A7;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #9EC2B7;
+    height: 110px;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.logo img {
+    height: 80%;
+    width: 200px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    right: 50px;
+    font-size: 20px;
+    padding-left: 280px;
+}
+
+
+.item,
+.item a {
+    margin: 20px;
+    text-decoration: underline;
+    color: #2E1451;
+    font-weight: bold;
+    
+
+}
+
+.item a:hover {
+    color: #F9EFD4;
+    transition: 0.1s;
+
+}
+
+.selecionado,
+.selecionado a {
+    color: #2E1451;
+    color: #F9EFD4;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <title>livros</title>
+</head>
+
+<body onload="recuperarListaLivros()">
+    <header>
+        <nav class="cabecalho">
+            <div class="logo">
+                <img src="/img/logo-transp2.png">
+            </div>
+            <nav class="nav-item">
+                <div class="item "><a href="pagina-alunos.html">ALUNOS</a></div>
+                <div class="item selecionado"><a href="pagina-livros.html">LIVROS</a></div>
+                <div class="item"><a href="pagina-emprestimo.html">EMPRESTIMOS</a></div>
+                <div class="item "><a href="pagina-menu.html">MENU</a></div>
+            </nav>
+        </nav>
+    </header>
+
+
+    <div class="botao-cadastrar">
+        <a class="botao-cadastrar1" href="cadastrar-livros.html">CADASTRAR</a>
+    </div>
+    <div class="meio">
+        <h1>LISTA DE LIVROS</h1>
+    </div>
+
+    <div class="container-tabela">
+        <table>
+            <thead>
+
+                <tr>
+                    <th>ID LIVRO</th>
+                    <th>TÍTULO</th>
+                    <th>AUTOR</th>
+                    <th>EDITORA</th>
+                    <th>ANO PUBLIC.</th>
+                    <th>ISBN</th>
+                    <th>QUANT. TOTAL</th>
+                    <th>QUANT. DISPONIVEL</th>
+                    <th>VALOR</th>
+                    <th>STATUS</th>
+                    <th>AÇÃO</th>
+                </tr>
+
+            </thead>
+            <tbody id="tabelaLivros">
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="js/livro.js"></script>
+</body>
+
+</html>

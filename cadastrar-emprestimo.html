@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrar-emprestimo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Emprestimos</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="cabecalho">
+
+            <div class="logo">
+                <img src="/img/logo-transp2.png">
+            </div>
+
+            <nav class="nav-item">
+
+                <div class="item "><a href="pagina-alunos.html">ALUNOS</a></div>
+
+                <div class="item"><a href="pagina-livros.html">LIVROS</a></div>
+
+                <div class="item selecionado"><a href="pagina-emprestimo.html">EMPRESTIMOS</a></div>
+
+                <div class="item "><a href="pagina-menu.html">MENU</a></div>
+
+            </nav>
+
+        </nav>
+
+    </header>
+
+    <h1>CADASTRAR EMPRESTIMO</h1>
+
+    <div class="container">
+
+        <div class="form-container">
+            <form>
+                <label for="id aluno">ID ALUNO</label>
+                <input type="text" id="id aluno" placeholder="INSIRA O ID">
+
+                <label for="id livro">ID LIVRO</label>
+                <input type="text" id="id livro" placeholder="INSIRA O ID">
+
+                <label for="data-inicio">DATA DE INICIO EMPRESTIMO</label>
+                <input type="date" id="data-inicio" placeholder="INSIRA A DATA DE INICIO">
+
+                <label for="data-devolucao">DATA DEVOLUÇÃO</label>
+                <input type="date" id="data-devolucao" placeholder="INSIRA A DATA DE DEVOLUÇÃO">
+
+                <label for="status">STATUS</label>
+                <input type="text" id="status" placeholder="INSIRA O STATUS">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="botao">
+        <input type="button" value="CADASTRAR" onclick="enviarFormulario()">
+    </div>
+</body>
+    <script src="js/emprestimo.js"></script>
+</html>

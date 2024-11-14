@@ -1,0 +1,19 @@
+  
+body {
+    background-image: url(../img/imagem-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+}
+
+.texto-inicial,
+h1 {
+    color: #F9EFD4;
+    display: flex;
+    width: 50px;
+    font-size: 45px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 280px;
+}

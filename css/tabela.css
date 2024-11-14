@@ -1,0 +1,54 @@
+:root {
+    --cabecalho: #2e1451;
+    --linhas: #2E1451;
+    --bordas: #845cba;
+}
+
+.container-tabela {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 95%;
+}
+
+table tr:hover {
+    background-color: var(--bordas);
+    color: var(--linhas);
+}
+
+table tr:hover td {
+    border-color: var(--linhas);
+}
+
+table th {
+    background-color: var(--cabecalho);
+    color: white;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table tr {
+    background-color: var(--linhas);
+    color: white;
+    height: 2rem;
+}
+
+th,
+td {
+    border: 1px solid var(--bordas);
+    text-align: center;
+}
+
+td img {
+    width: 16px;
+    padding: 5px;
+}
+
+.editar {
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+}

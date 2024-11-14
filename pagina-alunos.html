@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/alunos.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <title>alunos</title>
+</head>
+
+<body onload="recuperarListaAlunos()">
+    <header>
+        <nav class="cabecalho">
+            <div class="logo">
+                <img src="/img/logo-transp2.png">
+            </div>
+            <nav class="nav-item">
+                <div class="item selecionado"><a href="pagina-alunos.html">ALUNOS</a></div>
+                <div class="item"><a href="pagina-livros.html">LIVROS</a></div>
+                <div class="item"><a href="pagina-emprestimo.html">EMPRESTIMOS</a></div>
+                <div class="item "><a href="pagina-menu.html">MENU</a></div>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="botao-cadastrar">
+        <a href="cadastrar-alunos.html">CADASTRAR</a>
+    </div>
+    <div class="meio">
+        <h1>LISTA DE ALUNOS</h1>
+    </div>
+
+    <div class="container-tabela">
+        <table>
+            <thead>
+
+                <tr>
+                    <th>ID ALUNOS</th>
+                    <th>RA</th>
+                    <th>NOME</th>
+                    <th>SOBRENOME</th>
+                    <th>DATA NASC.</th>
+                    <th>ENDEREÇO</th>
+                    <th>E-MAIL</th>
+                    <th>TELEFONE</th>
+                    <th>AÇÃO</th>
+                </tr>
+
+            </thead>
+            <tbody id="tabelaAlunos">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/aluno.js"></script>
+</body>
+
+</html>
