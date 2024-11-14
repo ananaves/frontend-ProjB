@@ -3,9 +3,9 @@ async function enviarFormulario() {
     const emprestimoDTO = {
         "idAlumo": document.querySelectorAll("input")[0].value,
         "idLivro": document.querySelectorAll("input")[1].value,
-        "dataEmprestimo": Date(document.querySelectorAll("input")[2].value),
-        "dataDevolucao": Date(document.querySelectorAll("input")[3].value),
-        "statusEmprestimo": Date(document.querySelectorAll("input")[4].value),
+        "dataEmprestimo": new Date(document.querySelectorAll("input")[2].value).toISOString().split('T')[0],
+        "dataDevolucao": new Date(document.querySelectorAll("input")[3].value).toISOString().split('T')[0],
+        "statusEmprestimo": new Date(document.querySelectorAll("input")[4].value).toISOString().split('T')[0],
 
     }
     try {
