@@ -37,8 +37,9 @@ async function recuperarListaEmprestimo() {
         }
 
         const listaDeEmprestimo = await respostaSevidor.json();
-        criarTabelaEmprestimo(listaDeEmprestimo)
         console.log(listaDeEmprestimo)
+        criarTabelaEmprestimo(listaDeEmprestimo)
+       
 
     } catch (error) {
         console.log('erro ao comunicar com o servidor');

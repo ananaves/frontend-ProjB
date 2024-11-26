@@ -3,7 +3,7 @@ async function enviarFormulario() {
     const alunoDTO = {
         "nome": document.querySelectorAll("input")[0].value,
         "sobrenome": document.querySelectorAll("input")[1].value,
-        "dataNascimento": new Date(document.querySelectorAll("input")[2].value).toISOString().split('T')[0],
+        "dataNascimento": document.querySelectorAll("input")[2].value,
         "endereco": document.querySelectorAll("input")[3].value,
         "email": document.querySelectorAll("input")[4].value,
         "celular": document.querySelectorAll("input")[5].value,
@@ -32,16 +32,15 @@ async function enviarFormulario() {
 
 async function recuperarListaAlunos() {
     try {
-        const respostaSevidor = await fetch("http://localhost:3333/lista/alunos");
+        const respostaSevidor = await fetch("http://localhost:3333/lista/aluno");
 
         if (!respostaSevidor.ok) {
             throw new Error('Erro ao comunicar com o servidor');
         }
 
         const listaDeAlunos = await respostaSevidor.json();
-        criarTabelaAlunos(listaDeAlunos)
-        console.log(listaDeAlunos)
-
+        console.log(listaDeAlunos);
+        criarTabelaAlunos(listaDeAlunos);
     } catch (error) {
         console.log('erro ao comunicar com o servidor');
         console.log(error);
@@ -49,12 +48,11 @@ async function recuperarListaAlunos() {
 }
 
 function criarTabelaAlunos(alunos) {
-    const tabela = document.getElementById('tabelaAluno');
+    const tabela = document.getElementById('tabelaAlunos');
 
     alunos.forEach(aluno => {
         const row = document.createElement('tr');
-
-        /*
+        
         const idAluno = document.createElement('td');
         idAluno.textContent = aluno.idAluno;
         row.appendChild(idAluno);
@@ -62,8 +60,7 @@ function criarTabelaAlunos(alunos) {
         const ra = document.createElement('td');
         ra.textContent = aluno.ra;
         row.appendChild(ra);
-        */
-
+        
         const nome = document.createElement('td');
         nome.textContent = aluno.nome;
         row.appendChild(nome);

@@ -33,15 +33,16 @@ async function enviarFormulario() {
 
 async function recuperarListaLivros() {
     try {
-        const respostaSevidor = await fetch("http://localhost:3333/lista/livros");
+        const respostaSevidor = await fetch("http://localhost:3333/lista/livro");
 
         if (!respostaSevidor.ok) {
             throw new Error('Erro ao comunicar com o servidor');
         }
 
         const listaDeLivros = await respostaSevidor.json();
-        criarTabelaCarros(listaDeLivros)
         console.log(listaDeLivros)
+        criarTabelaLivros(listaDeLivros)
+      
 
     } catch (error) {
         console.log('erro ao comunicar com o servidor');
@@ -50,7 +51,7 @@ async function recuperarListaLivros() {
 }
 
 function criarTabelaLivros(livros) {
-    const tabela = document.getElementById('tabelaLivro');
+    const tabela = document.getElementById('tabelaLivros');
 
     livros.forEach(livro => {
         const row = document.createElement('tr');
